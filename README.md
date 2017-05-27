@@ -1,8 +1,8 @@
-#Simple PubSub Model
+# Simple PubSub Model
 
 This is a simple Publish Subscribe model using RabbitMQ with AMQP protocol. This also has spam detection, the publish model will allow only 3 messages per 5 seconds. No external library has been used for parsing the attributes.
 
-###File Structure
+### File Structure
 
 The file structure contains 3 files - 
 
@@ -10,22 +10,26 @@ The file structure contains 3 files -
 	- Subscribe.java - Contains the code for channel creation.
 	- SpamCounter.log - File to log the spam messages for spam filtering.
 
-###Attributes
+### Attributes
 
 -Publisher:
- 	- -p : channel to publish message to 
- 	- -i : user id publishing the message 
- 	- -m : the message to be published 
+```
+ 	-p : channel to publish message to 
+ 	-i : user id publishing the message 
+ 	-m : the message to be published 
+```
 
  Note: All three attributes are required for publishing a message.
 
- -Subscriber:
- 	- -s : the channel name
- 	- -i : user id creating the channel
+-Subscriber:
+```
+ 	-s : the channel name
+ 	-i : user id creating the channel
+```
 
  Note: Both the attributes are required for publishing a message.
 
-###Compilation and Use:
+### Compilation and Use:
 
 Follow the following steps:
 
